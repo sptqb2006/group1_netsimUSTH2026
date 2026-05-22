@@ -1,0 +1,4 @@
+Nodes,OfferedMbps,ThroughputMbps,AvgDelayMs,PDRPercent,PhyRxDrops,MacRetries,MacFinalDrops
+2,0.1,0.112797,1.90855,100,0,0,0
+3,0.2,0.224067,1.86946,100,0,0,0
+4,0.3,0.317004,2.05657,100,0,0,0
