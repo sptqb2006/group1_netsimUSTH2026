@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-plot_finalexam_v3.py
---------------------
+plot_labwork5.py
+----------------
 
-Read csma_ca_v3.csv (produced by scratch/finalexam_v3.cc) and produce four
+Read labwork5.csv (produced by scratch/labwork5.cc) and produce four
 PNG figures evaluating CSMA/CA without RTS/CTS as the node count grows
 from 2 to 30, plus a combined 4-panel summary.
 
@@ -19,8 +19,8 @@ After saving, the script opens all five images in the system's default
 image viewer (GUI window), so the plots appear as pictures, not as text.
 
 Usage:
-    python3 plot_finalexam_v3.py             # reads ./csma_ca_v3.csv
-    python3 plot_finalexam_v3.py path/to.csv # custom path
+    python3 plot_labwork5.py             # reads ./labwork5.csv
+    python3 plot_labwork5.py path/to.csv # custom path
 """
 
 import csv
@@ -112,12 +112,12 @@ def open_image(path: Path):
 
 
 def main():
-    csv_path = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("csma_ca_v3.csv")
+    csv_path = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("labwork5.csv")
     if not csv_path.is_file():
         print(f"ERROR: CSV not found: {csv_path}", file=sys.stderr)
         sys.exit(1)
 
-    outdir = csv_path.parent / "plots_finalexam_v3"
+    outdir = csv_path.parent / "plots_labwork5"
     outdir.mkdir(exist_ok=True)
     print(f"Reading {csv_path}")
     print(f"Writing PNGs to {outdir}/")

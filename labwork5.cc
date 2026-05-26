@@ -211,7 +211,7 @@ main(int argc, char* argv[])
     uint32_t repetitions = 3;
     // 100 kbps per source -> at N=30, offered = 2.9 Mbps << ~4.6 Mbps saturation.
     double perSrcKbps = 100.0;
-    std::string outCsv = "csma_ca_v3.csv";
+    std::string outCsv = "labwork5.csv";
 
     CommandLine cmd;
     cmd.AddValue("simTime", "Per-run simulation time (s)", simTime);
