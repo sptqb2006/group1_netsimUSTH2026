@@ -208,7 +208,7 @@ main(int argc, char* argv[])
     uint32_t payload = 1024;
     uint32_t minNodes = 2;
     uint32_t maxNodes = 30;
-    uint32_t repetitions = 3;
+    uint32_t repetitions = 10;
     // 100 kbps per source -> at N=30, offered = 2.9 Mbps << ~4.6 Mbps saturation.
     double perSrcKbps = 100.0;
     std::string outCsv = "labwork5.csv";
